@@ -1,9 +1,6 @@
 【任务一】
 MySQL 软件安装及数据库基础
 
-#任务时间#
-请于3月31日22:00前完成，在本文章评论打卡。逾期尚未打卡的会被清退。
-
 1.软件安装地址及教程
    地址：https://dev.mysql.com/downloads/mysql/
    教程：https://www.cnblogs.com/laumians-notes/p/9069498.html

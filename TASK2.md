@@ -27,3 +27,32 @@ MySQL 基础 （一）- 查询语句
 9. SQL代码规范
     [SQL编程格式的优化建议] https://zhuanlan.zhihu.com/p/27466166
     [SQL Style Guide] https://www.sqlstyle.guide/
+
+
+
+项目一：查找重复的电子邮箱
+CREATE TABLE email
+(
+    id int NOT NULL AUTO_INCREMENT
+    c char(50) NOT NULL
+    PRIMARY KEY (id)
+)ENGINE=InnoDB;
+
+
+select c,count(*) as count 
+from email group by c having count>1;
+
+项目二：查找大国
+CREATE TABLE email
+(
+    cname char(20) NOT NULL
+    continent char(20) NOT NULL
+    area int NOT NULL
+    population int NOT NULL
+    gdp int NOT NULL
+    PRIMARY KEY (cname)
+)ENGINE=InnoDB;
+
+
+SELECT cname,population,area
+FROM world where area>3000000 or (population>25000 and gdp>20000000)
